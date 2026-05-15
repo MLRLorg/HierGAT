@@ -1,0 +1,28 @@
+FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
+
+ENV PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    HF_HOME=/root/.cache/huggingface \
+    TRANSFORMERS_CACHE=/root/.cache/huggingface \
+    SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
+
+WORKDIR /workspace/HierGAT
+
+RUN python -m pip install --upgrade \
+    pip==20.3.4 \
+    setuptools==57.5.0 \
+    wheel==0.37.1
+
+COPY requirements.txt .
+
+# Não reinstala torch, porque a imagem base já vem com PyTorch 1.4 + CUDA.
+RUN grep -vE '^(torch|torchvision)' requirements.txt > /tmp/requirements-no-torch.txt && \
+    pip install Cython==0.29.36 && \
+    pip install -r /tmp/requirements-no-torch.txt && \
+    pip install --force-reinstall protobuf==3.20.3
+
+COPY . .
+
+RUN mkdir -p checkpoints /root/.cache/huggingface
+
+CMD ["python", "train.py", "--task", "Amazon-Google", "--batch_size", "32", "--max_len", "256", "--lr", "1e-5", "--n_epochs", "10", "--finetuning", "--split", "--lm", "bert"]

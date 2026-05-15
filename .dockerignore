@@ -1,0 +1,8 @@
+.git
+__pycache__
+*.pyc
+checkpoints
+hf_cache
+*.pt
+*.tar
+*.tar.gz
