@@ -3,12 +3,7 @@
 TASKS=(
 "Amazon-Google"
 "Abt-Buy"
-"Beer"
 "Itunes-Amazon"
-"Walmart-Amazon"
-"Fodors-Zagats"
-"DBLP-ACM"
-"DBLP-Scholar"
 "Company"
 "Dirty/DBLP-ACM"
 "Dirty/DBLP-Scholar"
@@ -25,7 +20,7 @@ mkdir -p logs
 mkdir -p results
 mkdir -p checkpoints
 
-RESULTS_FILE="results/results.csv"
+RESULTS_FILE="results/results1.csv"
 
 # cabeçalho CSV
 echo "task,f1,precision,recall,time_seconds,time_human" > $RESULTS_FILE
