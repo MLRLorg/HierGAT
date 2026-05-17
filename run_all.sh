@@ -55,7 +55,7 @@ do
         --n_epochs 10 \
         --finetuning \
         --split \
-        --lm bert \
+        --lm roberta \
         > logs/${SAFE_TASK}.log 2>&1
 
     END=$(date +%s)
