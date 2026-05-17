@@ -1,0 +1,261 @@
+Device cuda
+step: 0, loss: 0.8683914542198181
+step: 10, loss: 0.2642146348953247
+step: 20, loss: 0.05194992572069168
+step: 30, loss: 0.7028471827507019
+train time:  48.187007665634155
+=========eval at epoch=1=========
+Validation:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8842
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+valid time:  6.673813343048096
+Test:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8836
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+step: 0, loss: 0.3645622432231903
+step: 10, loss: 0.518100380897522
+step: 20, loss: 0.21204586327075958
+step: 30, loss: 0.22243845462799072
+train time:  48.050538539886475
+=========eval at epoch=1=========
+Validation:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8842
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+valid time:  6.424290895462036
+Test:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8836
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+step: 0, loss: 0.32876813411712646
+step: 10, loss: 0.26889315247535706
+step: 20, loss: 0.09146704524755478
+step: 30, loss: 0.05545862764120102
+train time:  48.307719707489014
+=========eval at epoch=1=========
+Validation:
+======================================
+accuracy=0.9842
+precision=0.8800
+recall=1.0000
+f1=0.9362
+======================================
+valid time:  6.506783723831177
+Test:
+======================================
+accuracy=0.9894
+precision=0.9167
+recall=1.0000
+f1=0.9565
+======================================
+step: 0, loss: 0.004788130521774292
+step: 10, loss: 0.00295354425907135
+step: 20, loss: 0.0032269656658172607
+step: 30, loss: 0.007460698485374451
+train time:  48.11610960960388
+=========eval at epoch=2=========
+Validation:
+======================================
+accuracy=0.9947
+precision=0.9565
+recall=1.0000
+f1=0.9778
+======================================
+valid time:  6.464673042297363
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 0.0006275177001953125
+step: 10, loss: 0.00018551945686340332
+step: 20, loss: 0.004606515169143677
+step: 30, loss: 0.00048117339611053467
+train time:  48.243560791015625
+=========eval at epoch=3=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.271146297454834
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 0.00023669004440307617
+step: 10, loss: 0.0007802248001098633
+step: 20, loss: 0.00025969743728637695
+step: 30, loss: 0.0005549043416976929
+train time:  48.06001019477844
+=========eval at epoch=4=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.495238304138184
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 0.000292852520942688
+step: 10, loss: 0.001345515251159668
+step: 20, loss: 0.0008752793073654175
+step: 30, loss: 0.0006126910448074341
+train time:  48.42511558532715
+=========eval at epoch=5=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.455970048904419
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 6.04093074798584e-05
+step: 10, loss: 0.012749388813972473
+step: 20, loss: 0.0001233220100402832
+step: 30, loss: 6.61015510559082e-05
+train time:  47.916974782943726
+=========eval at epoch=6=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.364319562911987
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 7.447600364685059e-05
+step: 10, loss: 0.00014793872833251953
+step: 20, loss: 0.0002148151397705078
+step: 30, loss: 0.00016561150550842285
+train time:  48.01728272438049
+=========eval at epoch=7=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.298801898956299
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 0.0006260275840759277
+step: 10, loss: 0.00028005242347717285
+step: 20, loss: 0.0009939074516296387
+step: 30, loss: 3.266334533691406e-05
+train time:  48.02166509628296
+=========eval at epoch=8=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.4594316482543945
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 0.00015667080879211426
+step: 10, loss: 0.00032088160514831543
+step: 20, loss: 3.56137752532959e-05
+step: 30, loss: 0.008774340152740479
+train time:  48.16874623298645
+=========eval at epoch=9=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.246891975402832
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+step: 0, loss: 0.0005560368299484253
+step: 10, loss: 9.012222290039062e-05
+step: 20, loss: 0.0017683207988739014
+step: 30, loss: 0.0010352730751037598
+train time:  47.941179513931274
+=========eval at epoch=10=========
+Validation:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================
+valid time:  6.214451551437378
+Test:
+======================================
+accuracy=1.0000
+precision=1.0000
+recall=1.0000
+f1=1.0000
+======================================

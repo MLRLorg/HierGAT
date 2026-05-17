@@ -1,0 +1,12 @@
+task,f1,precision,recall,time_seconds,time_human
+Amazon-Google,0.6882,0.7487,0.6368,5310,01h:28m:30s
+Abt-Buy,0.8262,0.8586,0.7961,11288,03h:08m:08s
+Beer,0.6364,0.8750,0.5000,287,00h:04m:47s
+Itunes-Amazon,0.9091,0.8929,0.9259,753,00h:12m:33s
+Walmart-Amazon,0.7859,0.8239,0.7513,9572,02h:39m:32s
+Fodors-Zagats,1.0000,1.0000,1.0000,735,00h:12m:15s
+DBLP-ACM,NA,NA,NA,623,00h:10m:23s
+DBLP-Scholar,0.9535,0.9491,0.9579,18166,05h:02m:46s
+Company,NA,NA,NA,1,00h:00m:01s
+Dirty/DBLP-ACM,NA,NA,NA,964,00h:16m:04s
+Dirty/DBLP-Scholar,NA,NA,NA,1857,00h:30m:57s

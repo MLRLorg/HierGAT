@@ -1,0 +1,65 @@
+Device cuda
+step: 0, loss: 0.6381813883781433
+step: 10, loss: 0.44909316301345825
+step: 20, loss: 0.5071156024932861
+step: 30, loss: 0.2691326439380646
+step: 40, loss: 0.43980836868286133
+step: 50, loss: 0.613534688949585
+step: 60, loss: 0.5283765196800232
+step: 70, loss: 0.3939838707447052
+step: 80, loss: 0.36485615372657776
+step: 90, loss: 0.1404549777507782
+step: 100, loss: 0.07759583741426468
+step: 110, loss: 0.08277586102485657
+step: 120, loss: 0.03060965985059738
+step: 130, loss: 0.03859449550509453
+step: 140, loss: 0.04820113629102707
+step: 150, loss: 0.016269929707050323
+step: 160, loss: 0.3632180988788605
+step: 170, loss: 0.1666170358657837
+step: 180, loss: 0.14466314017772675
+step: 190, loss: 0.02268657088279724
+step: 200, loss: 0.04250523820519447
+step: 210, loss: 0.0029811114072799683
+step: 220, loss: 0.005139879882335663
+step: 230, loss: 0.004804238677024841
+step: 240, loss: 0.035657063126564026
+step: 250, loss: 0.025159873068332672
+step: 260, loss: 0.011407747864723206
+step: 270, loss: 0.02095877379179001
+step: 280, loss: 0.012950140982866287
+step: 290, loss: 0.011091947555541992
+step: 300, loss: 0.18864166736602783
+step: 310, loss: 0.04881136864423752
+Traceback (most recent call last):
+  File "train.py", line 144, in <module>
+    initialize_and_train(train_dataset, valid_dataset, test_dataset, train_dataset.get_attr_num(), args, run_tag)
+  File "train.py", line 85, in initialize_and_train
+    batch_size=args.batch_size)
+  File "train.py", line 35, in train
+    logits, y, _ = model(xs, y, masks)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/workspace/HierGAT/model/model.py", line 79, in forward
+    output = self.bert(inputs_embeds=words_emb)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 790, in forward
+    encoder_attention_mask=encoder_extended_attention_mask,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 407, in forward
+    hidden_states, attention_mask, head_mask[i], encoder_hidden_states, encoder_attention_mask
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 368, in forward
+    self_attention_outputs = self.attention(hidden_states, attention_mask, head_mask)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 314, in forward
+    hidden_states, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 234, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+RuntimeError: CUDA out of memory. Tried to allocate 12.00 MiB (GPU 0; 15.63 GiB total capacity; 13.30 GiB already allocated; 3.75 MiB free; 15.14 GiB reserved in total by PyTorch)

@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
+FROM docker.io/pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
@@ -25,4 +25,4 @@ COPY . .
 
 RUN mkdir -p checkpoints /root/.cache/huggingface
 
-CMD ["python", "train.py", "--task", "Amazon-Google", "--batch_size", "32", "--max_len", "256", "--lr", "1e-5", "--n_epochs", "10", "--finetuning", "--split", "--lm", "bert"]
+CMD ["/bin/bash"]

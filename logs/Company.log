@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 140, in <module>
+    train_dataset = Dataset(trainset, category, lm=args.lm, lm_path=args.lm_path, max_len=args.max_len, split=args.split)
+  File "/workspace/HierGAT/model/dataset.py", line 61, in __init__
+    sents, tags_li, attributes = self.read_classification_file(source, split)
+  File "/workspace/HierGAT/model/dataset.py", line 75, in read_classification_file
+    for line in open(path):
+FileNotFoundError: [Errno 2] No such file or directory: 'data/Company/train.txt'

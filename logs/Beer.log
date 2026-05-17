@@ -1,0 +1,260 @@
+Device cuda
+step: 0, loss: 0.5239381790161133
+step: 10, loss: 0.48766133189201355
+train time:  17.28729820251465
+=========eval at epoch=1=========
+Validation:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8462
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+valid time:  2.3119258880615234
+Test:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8462
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+step: 0, loss: 0.4452072083950043
+step: 10, loss: 0.35586848855018616
+train time:  16.94821858406067
+=========eval at epoch=1=========
+Validation:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8462
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+valid time:  2.333129405975342
+Test:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8462
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+step: 0, loss: 0.31727057695388794
+step: 10, loss: 0.1790984570980072
+train time:  17.234535694122314
+=========eval at epoch=1=========
+Validation:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8462
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+valid time:  2.2646970748901367
+Test:
+======================================
+/opt/conda/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+accuracy=0.8462
+precision=0.0000
+recall=0.0000
+f1=0.0000
+======================================
+step: 0, loss: 0.34425294399261475
+step: 10, loss: 0.20532295107841492
+train time:  16.84652614593506
+=========eval at epoch=1=========
+Validation:
+======================================
+accuracy=0.8571
+precision=1.0000
+recall=0.0714
+f1=0.1333
+======================================
+valid time:  2.305990219116211
+Test:
+======================================
+accuracy=0.8681
+precision=1.0000
+recall=0.1429
+f1=0.2500
+======================================
+step: 0, loss: 0.27014482021331787
+step: 10, loss: 0.17867515981197357
+train time:  16.889875411987305
+=========eval at epoch=2=========
+Validation:
+======================================
+accuracy=0.8571
+precision=0.5294
+recall=0.6429
+f1=0.5806
+======================================
+valid time:  2.308871269226074
+Test:
+======================================
+accuracy=0.8791
+precision=0.6364
+recall=0.5000
+f1=0.5600
+======================================
+step: 0, loss: 0.2577537000179291
+step: 10, loss: 0.3684452772140503
+train time:  17.02793836593628
+=========eval at epoch=3=========
+Validation:
+======================================
+accuracy=0.8132
+precision=0.4348
+recall=0.7143
+f1=0.5405
+======================================
+valid time:  2.2722363471984863
+Test:
+======================================
+accuracy=0.8901
+precision=0.6111
+recall=0.7857
+f1=0.6875
+======================================
+step: 0, loss: 0.18644478917121887
+step: 10, loss: 0.05819948762655258
+train time:  16.70675778388977
+=========eval at epoch=4=========
+Validation:
+======================================
+accuracy=0.8901
+precision=0.6667
+recall=0.5714
+f1=0.6154
+======================================
+valid time:  2.293071985244751
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
+step: 0, loss: 0.09354910999536514
+step: 10, loss: 0.15457887947559357
+train time:  16.891863346099854
+=========eval at epoch=5=========
+Validation:
+======================================
+accuracy=0.8681
+precision=0.5714
+recall=0.5714
+f1=0.5714
+======================================
+valid time:  2.3588826656341553
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
+step: 0, loss: 0.006523191928863525
+step: 10, loss: 0.038291461765766144
+train time:  16.933019876480103
+=========eval at epoch=6=========
+Validation:
+======================================
+accuracy=0.8791
+precision=0.6154
+recall=0.5714
+f1=0.5926
+======================================
+valid time:  2.318732500076294
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
+step: 0, loss: 0.07115916907787323
+step: 10, loss: 0.02626737952232361
+train time:  16.829281330108643
+=========eval at epoch=7=========
+Validation:
+======================================
+accuracy=0.8791
+precision=0.6154
+recall=0.5714
+f1=0.5926
+======================================
+valid time:  2.271428346633911
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
+step: 0, loss: 0.1575152575969696
+step: 10, loss: 0.05811341851949692
+train time:  16.86741304397583
+=========eval at epoch=8=========
+Validation:
+======================================
+accuracy=0.8791
+precision=0.6154
+recall=0.5714
+f1=0.5926
+======================================
+valid time:  2.3316047191619873
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
+step: 0, loss: 0.036776427179574966
+step: 10, loss: 0.026925567537546158
+train time:  17.09641456604004
+=========eval at epoch=9=========
+Validation:
+======================================
+accuracy=0.8791
+precision=0.6154
+recall=0.5714
+f1=0.5926
+======================================
+valid time:  2.3034486770629883
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
+step: 0, loss: 0.10334750264883041
+step: 10, loss: 0.03671165555715561
+train time:  17.09130620956421
+=========eval at epoch=10=========
+Validation:
+======================================
+accuracy=0.8791
+precision=0.6154
+recall=0.5714
+f1=0.5926
+======================================
+valid time:  2.3084676265716553
+Test:
+======================================
+accuracy=0.9121
+precision=0.8750
+recall=0.5000
+f1=0.6364
+======================================
