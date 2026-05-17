@@ -1,8 +1,6 @@
 #!/bin/bash
 
 TASKS=(
-"Amazon-Google"
-"Abt-Buy"
 "Itunes-Amazon"
 "Company"
 "Dirty/DBLP-ACM"
