@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 5, in <module>
+    from model.eval import eval_on_task
+  File "/workspace/HierGAT/model/eval.py", line 1, in <module>
+    import torch
+  File "/opt/conda/lib/python3.7/site-packages/torch/__init__.py", line 81, in <module>
+    from torch._C import *
+KeyboardInterrupt

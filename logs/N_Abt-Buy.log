@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "train.py", line 5, in <module>
+    from model.eval import eval_on_task
+  File "/workspace/HierGAT/model/eval.py", line 1, in <module>
+    import torch
+  File "/opt/conda/lib/python3.7/site-packages/torch/__init__.py", line 309, in <module>
+    import torch.multiprocessing
+  File "/opt/conda/lib/python3.7/site-packages/torch/multiprocessing/__init__.py", line 45, in <module>
+    from .spawn import spawn, SpawnContext, _supports_context
+  File "/opt/conda/lib/python3.7/site-packages/torch/multiprocessing/spawn.py", line 4, in <module>
+    import multiprocessing.connection
+  File "/opt/conda/lib/python3.7/multiprocessing/connection.py", line 30, in <module>
+    import _winapi
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1280, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1252, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1391, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 56, in _path_join
+KeyboardInterrupt

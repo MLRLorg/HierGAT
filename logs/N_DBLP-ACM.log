@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "train.py", line 140, in <module>
+    train_dataset = Dataset(trainset, category, lm=args.lm, lm_path=args.lm_path, max_len=args.max_len, split=args.split)
+  File "/workspace/HierGAT/model/dataset.py", line 51, in __init__
+    self.tokenizer = get_tokenizer(lm, lm_path)
+  File "/workspace/HierGAT/model/dataset.py", line 41, in get_tokenizer
+    tokenizer = RobertaTokenizer.from_pretrained(path)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/tokenization_utils.py", line 393, in from_pretrained
+    return cls._from_pretrained(*inputs, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/tokenization_utils.py", line 469, in _from_pretrained
+    local_files_only=local_files_only,
+  File "/opt/conda/lib/python3.7/site-packages/transformers/file_utils.py", line 254, in cached_path
+    local_files_only=local_files_only,
+  File "/opt/conda/lib/python3.7/site-packages/transformers/file_utils.py", line 487, in get_from_cache
+    http_get(url, temp_file, proxies=proxies, resume_size=resume_size, user_agent=user_agent)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/file_utils.py", line 362, in http_get
+    response = requests.get(url, stream=True, proxies=proxies, headers=headers)
+  File "/opt/conda/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/opt/conda/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/opt/conda/lib/python3.7/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/opt/conda/lib/python3.7/site-packages/urllib3/connectionpool.py", line 978, in _validate_conn
+    conn.connect()
+  File "/opt/conda/lib/python3.7/site-packages/urllib3/connection.py", line 309, in connect
+    conn = self._new_conn()
+  File "/opt/conda/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/opt/conda/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
