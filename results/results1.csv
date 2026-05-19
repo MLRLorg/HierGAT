@@ -1,0 +1,6 @@
+task,f1,precision,recall,time_seconds,time_human
+Itunes-Amazon,0.8846,0.9200,0.8519,1780,00h:29m:40s
+Company,NA,NA,NA,2,00h:00m:02s
+Dirty/DBLP-ACM,NA,NA,NA,13,00h:00m:13s
+Dirty/DBLP-Scholar,0.9469,0.9434,0.9505,24734,06h:52m:14s
+Dirty/Walmart-Amazon,0.7425,0.7784,0.7098,18980,05h:16m:20s

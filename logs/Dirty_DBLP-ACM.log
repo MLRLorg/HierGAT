@@ -1,47 +1,5 @@
 Device cuda
-step: 0, loss: 2.106269598007202
-step: 10, loss: 0.6436929702758789
-step: 20, loss: 0.30577754974365234
-step: 30, loss: 0.33356913924217224
-step: 40, loss: 0.4383813738822937
-step: 50, loss: 0.2450243979692459
-step: 60, loss: 0.6102989912033081
-step: 70, loss: 0.40968555212020874
-step: 80, loss: 0.8698022365570068
-step: 90, loss: 0.3061785101890564
-step: 100, loss: 0.30364400148391724
-step: 110, loss: 0.30127111077308655
-step: 120, loss: 0.12117628753185272
-step: 130, loss: 0.01907508820295334
-step: 140, loss: 0.5163419246673584
-step: 150, loss: 0.2503509223461151
-step: 160, loss: 0.1075185239315033
-step: 170, loss: 0.21348689496517181
-step: 180, loss: 0.09303314238786697
-step: 190, loss: 0.22568151354789734
-step: 200, loss: 0.03981967642903328
-step: 210, loss: 0.03408331051468849
-step: 220, loss: 0.013480067253112793
-step: 230, loss: 0.027168821543455124
-step: 240, loss: 0.19243913888931274
-step: 250, loss: 0.007284082472324371
-step: 260, loss: 0.0801003947854042
-step: 270, loss: 0.02526862919330597
-step: 280, loss: 0.02894853800535202
-step: 290, loss: 0.015139810740947723
-step: 300, loss: 0.01401934027671814
-step: 310, loss: 0.003754362463951111
-step: 320, loss: 0.01374351978302002
-step: 330, loss: 0.003985144197940826
-step: 340, loss: 0.003228798508644104
-step: 350, loss: 0.053575389087200165
-step: 360, loss: 0.054708246141672134
-step: 370, loss: 0.008583895862102509
-step: 380, loss: 0.1847105771303177
-step: 390, loss: 0.030078649520874023
-step: 400, loss: 0.08058787137269974
-step: 410, loss: 0.011511635035276413
-step: 420, loss: 0.010830197483301163
+step: 0, loss: 1.16769278049469
 Traceback (most recent call last):
   File "train.py", line 144, in <module>
     initialize_and_train(train_dataset, valid_dataset, test_dataset, train_dataset.get_attr_num(), args, run_tag)
@@ -71,6 +29,6 @@ Traceback (most recent call last):
     hidden_states, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask
   File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
     result = self.forward(*input, **kwargs)
-  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 234, in forward
-    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
-RuntimeError: CUDA out of memory. Tried to allocate 12.00 MiB (GPU 0; 15.63 GiB total capacity; 13.90 GiB already allocated; 9.75 MiB free; 15.13 GiB reserved in total by PyTorch)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_bert.py", line 235, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+RuntimeError: CUDA out of memory. Tried to allocate 34.00 MiB (GPU 0; 15.63 GiB total capacity; 14.67 GiB already allocated; 15.75 MiB free; 15.13 GiB reserved in total by PyTorch)
